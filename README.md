@@ -2,9 +2,9 @@
 > Integration component for elastic.io that parses EDIFACT files
 
 # edifact-parser-component
-&gt; EDIFACT Parser component for the [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;)
+EDIFACT Parser component for the [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;)
 
-&lt;%- componentDescription -&gt;. If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;) you must follow sets of instructions to succseed**. 
+If you plan to **deploy it into [elastic.io platform](http://www.elastic.io &#34;elastic.io platform&#34;) you must follow sets of instructions to succseed**. 
 
 ## Before you Begin
 
