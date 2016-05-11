@@ -61,9 +61,8 @@ describe('Order Parsing', function() {
       parser.encoding('UNOB');
       parser.write(orderEdi);
       parser.end();
-      console.log(result);
-      //assert.equal(-1, [1,2,3].indexOf(5));
-      //assert.equal(-1, [1,2,3].indexOf(0));
+      assert.equal(20, result.length);
+      assert.equal('{"name":"NAD","elements":[["SU"],["4012345000094","","9"]]}', JSON.stringify(result[4]));
     });
   });
 });
