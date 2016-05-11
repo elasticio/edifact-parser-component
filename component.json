@@ -9,5 +9,12 @@
         "viewClass": "TextFieldView"
       }
     }
+  },
+  "actions": {
+    "parse": {
+      "title": "Parse",
+      "main": "./lib/actions/parse.js",
+      "dynamicMetadata": true
+    }
   }
 }
