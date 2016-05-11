@@ -1,0 +1,13 @@
+{
+  "title": "EDIFACT Parser",
+  "description": "Integration component that parses EDIFACT files",
+  "credentials": {
+    "fields": {
+      "name": {
+        "label": "My API Key",
+        "required": true,
+        "viewClass": "TextFieldView"
+      }
+    }
+  }
+}
