@@ -1,20 +1,11 @@
 {
   "title": "EDIFACT Parser",
   "description": "Integration component that parses EDIFACT files",
-  "credentials": {
-    "fields": {
-      "name": {
-        "label": "My API Key",
-        "required": true,
-        "viewClass": "TextFieldView"
-      }
-    }
-  },
   "actions": {
     "parse": {
       "title": "Parse",
       "main": "./lib/actions/parse.js",
-      "dynamicMetadata": true
+      "metadata": {}
     }
   }
 }
