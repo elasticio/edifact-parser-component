@@ -19,9 +19,9 @@
     "elasticio"
   ],
   "dependencies": {
-    "edifact": "^1.2.7",
+    "edifact": "^1.2.8",
     "elasticio-node": "0.0.8",
-    "elasticio-sailor-nodejs": "^2.2.0",
+    "elasticio-sailor-nodejs": "^2.2.0"
   },
   "devDependencies": {
     "eslint": "^2.1.0",

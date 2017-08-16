@@ -4,6 +4,7 @@
   "actions": {
     "parse": {
       "title": "Parse",
+      "description": "Parses an incoming EDIFACT attachment",
       "main": "./lib/actions/parse.js",
       "metadata": {}
     }
