@@ -1,9 +1,8 @@
 var assert = require('chai').assert;
 var Parser = require('edifact/parser.js');
 var Validator = require('edifact/validator.js');
-var Tracker = require('edifact/tracker.js');
 
-var orderEdi=`UNH+SSDD1+ORDERS:D:03B:UN:EAN008'
+var orderEdi = `UNH+SSDD1+ORDERS:D:03B:UN:EAN008'
 BGM+220+BKOD99+9'
 DTM+137:20051107:102'
 NAD+BY+5412345000176::9'
@@ -24,8 +23,7 @@ UNS+S'
 CNT+2:4'
 UNT+22+SSDD1'`;
 
-describe('Order Parsing', function() {
-
+describe('Order Parsing', function () {
   describe('Parser', function () {
     it('should be able to parse edi', function () {
       var validator = new Validator();
@@ -36,12 +34,14 @@ describe('Order Parsing', function() {
       validator.define(require('edifact/elements.js'));
 
       // Parsed segments will be collected in the result array.
-      var result = [], elements, components;
+      const result = [];
+      let elements;
+      let components;
 
       parser.on('opensegment', function (segment) {
         // Started a new segment.
         elements = [];
-        result.push({ name: segment, elements: elements });
+        result.push({name: segment, elements: elements});
       });
 
       parser.on('element', function () {
