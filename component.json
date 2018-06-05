@@ -2,13 +2,13 @@
   "title": "EDIFACT Parser",
   "description": "Integration component that parses EDIFACT files",
   "actions": {
-    "parse-attachment": {
+    "parse_attachment": {
       "title": "Parse Attachment",
       "description": "Parses an incoming EDIFACT attachment",
       "main": "./lib/actions/parse.js",
       "metadata": {}
     },
-    "parse-body": {
+    "parse_body": {
       "title": "Parse Body",
       "description": "Parses an incoming EDIFACT body",
       "main": "./lib/actions/parse-body.js",
