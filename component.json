@@ -1,6 +1,7 @@
 {
   "title": "EDIFACT Parser",
   "description": "Integration component that parses EDIFACT files",
+  "buildType": "docker",
   "actions": {
     "parse": {
       "title": "Parse",
