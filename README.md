@@ -1,4 +1,5 @@
-# edifact-parser-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+[![CircleCI](https://circleci.com/gh/elasticio/edifact-parser-component.svg?style=svg)](https://circleci.com/gh/elasticio/edifact-parser-component)
+# edifact-parser-component 
 > Integration component for elastic.io that parses EDIFACT files
 
 # edifact-parser-component

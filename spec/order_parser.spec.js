@@ -1,8 +1,8 @@
-var assert = require('chai').assert;
-var Parser = require('edifact/parser.js');
-var Validator = require('edifact/validator.js');
+const { assert } = require('chai');
+const Parser = require('edifact/parser.js');
+const Validator = require('edifact/validator.js');
 
-var orderEdi = `UNH+SSDD1+ORDERS:D:03B:UN:EAN008'
+const orderEdi = `UNH+SSDD1+ORDERS:D:03B:UN:EAN008'
 BGM+220+BKOD99+9'
 DTM+137:20051107:102'
 NAD+BY+5412345000176::9'
@@ -23,14 +23,16 @@ UNS+S'
 CNT+2:4'
 UNT+22+SSDD1'`;
 
-describe('Order Parsing', function () {
-  describe('Parser', function () {
-    it('should be able to parse edi', function () {
-      var validator = new Validator();
-      var parser = new Parser(validator);
+describe('Order Parsing', () => {
+  describe('Parser', () => {
+    it('should be able to parse edi', () => {
+      const validator = new Validator();
+      const parser = new Parser(validator);
 
       // Provide some segment and element definitions.
+      // eslint-disable-next-line global-require
       validator.define(require('edifact/segments.js'));
+      // eslint-disable-next-line global-require
       validator.define(require('edifact/elements.js'));
 
       // Parsed segments will be collected in the result array.
@@ -38,24 +40,24 @@ describe('Order Parsing', function () {
       let elements;
       let components;
 
-      parser.on('opensegment', function (segment) {
+      parser.on('opensegment', (segment) => {
         // Started a new segment.
         elements = [];
-        result.push({name: segment, elements: elements});
+        result.push({ name: segment, elements });
       });
 
-      parser.on('element', function () {
+      parser.on('element', () => {
         // Parsed a new element.
         components = [];
         elements.push(components);
       });
 
-      parser.on('component', function (value) {
+      parser.on('component', (value) => {
         // Got a new component.
         components.push(value);
       });
 
-      parser.on('closesegment', function () {
+      parser.on('closesegment', () => {
         // Closed a segment.
       });
       parser.encoding('UNOB');
