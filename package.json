@@ -26,11 +26,11 @@
     "elasticio"
   ],
   "dependencies": {
-    "axios": "0.21.0",
+    "axios": "^0.21.1",
     "edifact": "1.2.8",
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.6.24",
-    "request": "2.81.0"
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "chai": "4.2.0",
