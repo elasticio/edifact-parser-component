@@ -1,3 +1,7 @@
+## 0.0.3 (March 12, 2021)
+
+* Upgrade to sailor 2.6.24
+
 ## 0.0.2 (November 30, 2020)
 
 * Upgrade to sailor 2.6.19
@@ -6,4 +10,4 @@
 
 ## 0.0.1 (August 25, 2017)
 
-* Initial release of OIH standardized component
+* Initial release
