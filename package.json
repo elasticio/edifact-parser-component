@@ -1,6 +1,5 @@
 {
   "name": "edifact-parser-component",
-  "version": "0.0.3",
   "description": "Integration component for elastic.io that parses EDIFACT files",
   "homepage": "http://elastic.io",
   "author": {
